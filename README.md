@@ -1,7 +1,5 @@
 # Decentralize Portfolio
 
-![Decentralize Portfolio](https://github.com/kshitijofficial/Decentralize-Portfolio/blob/main/images/decentralize-portfolio.png)
-
 Decentralize Portfolio is a decentralized application (DApp) built on the Ethereum blockchain that allows users to create and manage their digital portfolios. This project aims to provide a secure, transparent, and censorship-resistant platform for individuals to showcase their work and accomplishments.
 
 ## Features
