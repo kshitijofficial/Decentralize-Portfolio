@@ -1,0 +1,160 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: var(--font-family);
+}
+
+.hero {
+    color: white;
+    width: 100%;
+    height: 100vh;
+    background-color: var(--color-bg);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 60px;
+}
+
+/* =========hero img========== */
+
+.hero-img .img-container img {
+
+    width: 250px;
+    height: auto;
+    border-radius: 40px 0px 40px 0px;
+    border-right: 6px solid var(--color-blue);
+    border-bottom: 6px solid var(--color-blue);
+
+}
+
+/* =========hero text========== */
+
+
+.hero-text {
+    width: 650px;
+}
+
+.hero-text p {
+    font-size: 16px;
+    font-weight: 200;
+    opacity: 0.8;
+
+
+}
+
+.hero-text p span {
+    color: var(--color-blue);
+    font-size: 16px;
+    font-weight: 400;
+
+}
+
+.hero-text h1 {
+
+    margin-top: 12px;
+    font-size: 48px;
+
+}
+
+.hero-text h3 {
+    margin-top: 18px;
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 28px;
+    opacity: 0.75;
+}
+
+.hero-text .msg-btn {
+    margin-top: 36px;
+    color: white;
+    font-weight: 400;
+    background-color: var(--color-blue);
+    height: 42px;
+    width: 200px;
+    border: 2px solid rgb(86, 88, 226);
+    border-radius: 20px 0 20px 0px;
+}
+
+.hero-text .msg-btn:hover {
+    background-color: var(--color-bg);
+}
+
+/* .hero-text .connect-btn {
+    margin-top: 36px;
+    color: white;
+    font-weight: 400;
+    background-color: var(--color-blue);
+    height: 42px;
+    width: 42px;
+    border: 2px solid rgb(86, 88, 226);
+    border-radius: 30px;
+    margin-left: 40px;
+} */
+
+.hero-text .connect-btn .icon {
+    color: black;
+    width: 40px;
+    height: 40px;
+}
+
+.text-align {
+    text-align: center;
+}
+
+/* =========media querries========== */
+@media screen and (max-width: 420px) {
+
+    .hero {
+        flex-direction: column-reverse;
+        height: auto;
+    }
+
+    .container {
+        flex-direction: column-reverse !important;
+        justify-content: center;
+        gap: 20px !important;
+    }
+
+    .hero-img {
+        margin: 0 auto;
+
+    }
+
+    .hero-img .img-container img {
+        width: 300px;
+        margin-top: 40px;
+    }
+
+    .hero-text {
+        width: 100%;
+        margin-top: 40px;
+        padding: 0 20px 0 20px;
+        text-align: center;
+
+    }
+
+    .hero-text p {
+        font-size: 12px;
+    }
+
+    .hero-text p span {
+        font-size: 12px;
+    }
+
+    .hero-text h1 {
+        font-size: 32px;
+
+    }
+
+    .hero-text h3 {
+        font-size: 14px;
+        line-height: 20px;
+    }
+}

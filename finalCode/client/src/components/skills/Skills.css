@@ -1,0 +1,32 @@
+.skills-section{
+    background-color: var(--color-bg);
+    
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 80px;
+    border-top: 1px var(--color-blue) solid;
+    border-bottom: 1px var(--color-blue) solid;
+
+}
+.skills-section img{
+    width: 50px;
+    height: 50px;
+    margin: 20px 0 20px 0;
+}
+
+/* =========media querries========== */
+@media screen and (max-width: 420px) {
+    .skills-section{
+        display: flex;
+        flex-wrap: wrap;
+        gap: 8px;
+    
+    }
+    .skills-section img{
+        width: 40px;
+        height: 40px;
+        margin: 20px 0 20px 0;
+    }
+}

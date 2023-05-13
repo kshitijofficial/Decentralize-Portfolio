@@ -1,0 +1,33 @@
+.socials {
+    background-color: var(--color-bg);
+
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 150px;
+    border-top: 1px var(--color-blue) solid;
+    border-bottom: 1px var(--color-blue) solid;
+}
+
+.socials .icon {
+    color: var(--color-blue);
+    margin: 20px 0 20px 0;
+    height: 60px;
+    width: 60px;
+}
+
+/* =========media querries========== */
+@media screen and (max-width: 420px) {
+    .socials {
+        gap: 20px;
+
+    }
+
+    .socials .icon {
+        color: var(--color-blue);
+        margin: 12px 0 12px 0;
+        height: 40px;
+        width: 40px;
+    }
+}
