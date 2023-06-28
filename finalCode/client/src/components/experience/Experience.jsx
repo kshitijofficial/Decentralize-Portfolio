@@ -9,7 +9,7 @@ const Experience = ({state}) => {
     useEffect(()=>{
         const {contract}=state;
         const educationDetails=async()=>{
-            const education = await contract.methods.allEductationDetails().call();
+            const education = await contract.methods.allEducationDetails().call();
             setEducation(education);
         }
         contract && educationDetails();
@@ -21,7 +21,7 @@ const Experience = ({state}) => {
             <div className="container">
 
                 <div className="education">
-                    <h1 className="edu-tittle">Education</h1>
+                    <h1 className="edu-title">Education</h1>
                     {education!=="" && education.map((edu)=>{
                         return (   
                         <div className="edu-card">
@@ -40,7 +40,7 @@ const Experience = ({state}) => {
                 </div>
                 {/* experience */}
                 <div className="education">
-                    <h1 className="edu-tittle">Experience</h1>
+                    <h1 className="edu-title">Experience</h1>
                     <div className="edu-card">
                         <p className="card-text1">
                             <SlCalender className='icon' /> March 2013 - Present
